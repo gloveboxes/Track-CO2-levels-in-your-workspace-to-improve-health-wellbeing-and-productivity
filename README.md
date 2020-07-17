@@ -1,4 +1,4 @@
-# Build a healthier workspace by tracking CO2 levels
+# Improve wellbeing and build a healthier workspace by tracking CO2 levels
 
 How to build a healthier working environment by monitoring CO2, temperature, and humidity levels with an [Azure Sphere](https://azure.microsoft.com/en-gb/services/azure-sphere/?WT.mc_id=julyot-co2-dglover), an [SDC30 sensor](https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD30-p-2911.html), and [Azure IoT Central](https://azure.microsoft.com/en-gb/services/iot-central/?WT.mc_id=julyot-co2-dglover).
 
