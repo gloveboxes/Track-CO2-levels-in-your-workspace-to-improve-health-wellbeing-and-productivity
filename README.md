@@ -1,4 +1,4 @@
-# Are CO2 levels making you happy, grumpy, sleepy, or sad
+# Are CO2 levels making you grumpy, sleepy, or sad
 
 **Follow** me on **Twitter** [@dglover](https://twitter.com/dglover)
 
@@ -54,5 +54,17 @@ The solution supports two configurations:
     2. [Setting up Azure IoT Central](https://github.com/gloveboxes/Azure-Sphere-Learning-Path/tree/master/zdocs_vs_code_iot_central/Lab_2_Send_Telemetry_to_Azure_IoT_Central) sections.
 
 ---
+
+## IoT Central Application
+
+When I created the Azure IoT Central device template I created the following views.
+
+### Properties view
+
+![](resources/iot-central-view-properties.png)
+
+### Telemetry view
+
+![](resources/iot-central-view-telemetry.png)
 
 Have fun and stay safe and be sure to follow us on [#JulyOT](https://twitter.com/hashtag/JulyOT?src=hash&ref_src=twsrc%5Etfw).
