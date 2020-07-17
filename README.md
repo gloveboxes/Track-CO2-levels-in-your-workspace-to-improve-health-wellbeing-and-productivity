@@ -2,9 +2,14 @@
 
 ![](https://raw.githubusercontent.com/gloveboxes/CO2-levels-making-you-happy-grumpy-sleepy-or-sad/master/resources/banner.png)
 
+**Follow** me on **Twitter** [@dglover](https://twitter.com/dglover)
+
 How to build a healthier working environment by monitoring CO2, temperature, and humidity levels with an [Azure Sphere](https://azure.microsoft.com/en-gb/services/azure-sphere/?WT.mc_id=julyot-co2-dglover), an [SDC30 sensor](https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD30-p-2911.html), and [Azure IoT Central](https://azure.microsoft.com/en-gb/services/iot-central/?WT.mc_id=julyot-co2-dglover).
 
-**Follow** me on **Twitter** [@dglover](https://twitter.com/dglover)
+* [This solution source code](https://github.com/gloveboxes/CO2-levels-making-you-happy-grumpy-sleepy-or-sad)
+* [Azure Sphere Developer Learning Path](https://github.com/gloveboxes/Azure-Sphere-Learning-Path)
+
+---
 
 ## #JulyOT
 
