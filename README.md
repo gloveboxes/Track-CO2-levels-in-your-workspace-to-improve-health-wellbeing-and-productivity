@@ -2,6 +2,25 @@
 
 **Follow** me on **Twitter** [@dglover](https://twitter.com/dglover)
 
+---
+
+## #JulyOT
+
+The month of [#JulyOT](https://twitter.com/hashtag/JulyOT?src=hash&ref_src=twsrc%5Etfw) is here!  To celebrate, we have curated a collection of  blog posts, hands-on-labs, and videos designed to demonstrate and teach developers how to build projects with Azure Internet of Things (IoT) services.   
+
+This content ranges from video demonstrations of real-world solutions, 
+
+1. [5-part series on developing an Intelligent Video Analytics service](https://github.com/toolboc/Intelligent-Video-Analytics-with-NVIDIA-Jetson-and-Microsoft-Azure),  
+2. [IoT bird-box project for families](https://github.com/jimbobbennett/smart-garden-ornaments),  
+3. [Raspberry Pi air quality monitor backed by Azure IoT Central](https://www.youtube.com/watch?v=ayIrNB8gh68), 
+4. self-guided training series designed to help study for the [Azure 220 IoT Developer certification](https://docs.microsoft.com/en-us/learn/certifications/exams/az-220).
+
+All of this content will be made available on this [IoT Tech Community](http://aka.ms/julyot) page.  It is highly recommended that you bookmark this page.
+
+---
+
+## Building a healthier workspace tracking CO2 levels
+
 How to build a workspace health CO2, temperature, and humidity monitor with [Azure Sphere](https://azure.microsoft.com/en-gb/services/azure-sphere/), a SDC30 sensor and [Azure IoT Central](https://azure.microsoft.com/en-gb/services/iot-central/).
 
 Working from home it is easy to close the door to shut out the noise of everyday life while we get on with work. Carbon dioxide is a byproduct of our breathing and closing the door can mean Carbon Dioxide (CO2) is building up in our work spaces which can really impacting on our wellbeing, concentration, and productivity levels.
