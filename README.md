@@ -1,6 +1,6 @@
 # Build a healthier workspace by tracking CO2 levels
 
-How to build a healthier workspace by monitoring CO2, temperature, and humidity with [Azure Sphere](https://azure.microsoft.com/en-gb/services/azure-sphere/), an SDC30 sensor and [Azure IoT Central](https://azure.microsoft.com/en-gb/services/iot-central/).
+How to build a healthier workspace by monitoring CO2, temperature, and humidity with [Azure Sphere](https://azure.microsoft.com/en-gb/services/azure-sphere/?WT.mc_id=julyot-co2-dglover), an SDC30 sensor and [Azure IoT Central](https://azure.microsoft.com/en-gb/services/iot-central/?WT.mc_id=julyot-co2-dglover).
 
 ## #JulyOT
 
@@ -18,8 +18,6 @@ This is part of the #JulyOT [IoT Tech Community](http://aka.ms/julyot) series.
 
 Working from home it is easy to close the door to shut out the noise of everyday life while we get on with work. Carbon dioxide is a byproduct of our breathing and closing the door can mean Carbon Dioxide (CO2) is building up in our workspaces impacting our wellbeing, concentration, and productivity levels.
 
-
-
 For the science, then check out [The importance of Indoor Air Quality (IAQ) for Business Performance and Wellbeing](https://iotfactory.eu/the-importance-of-indoor-air-quality-iaq-for-business-performance-and-wellbeing/).
 
 The problem is we can't see or smell Carbon Dioxide, it just keeps building up and we have no way of knowing it is happening other than getting tired or a headache. So with that in mind, I figured it was the Internet of Things to the rescue!
@@ -28,13 +26,13 @@ The problem is we can't see or smell Carbon Dioxide, it just keeps building up a
 
 ## The solution
 
-I wanted to build a secure IoT device with [Azure Sphere](https://azure.microsoft.com/en-gb/services/azure-sphere/) using the [Seeed Studio Grove CO2 & Temperature & Humidity Sensor](https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD30-p-2911.html) sensor I had in my box of bits. The folks at Sensirion made it super easy to port their [SCD30 driver](https://github.com/Sensirion/embedded-scd) to Azure Sphere. It was really just a matter of implementing the I2C read and write functions and providing an implementation for microsecond sleep. It just worked, and the ported driver is included in this project.
+I wanted to build a secure IoT device with [Azure Sphere](https://azure.microsoft.com/en-gb/services/azure-sphere/?WT.mc_id=julyot-co2-dglover) using the [Seeed Studio Grove CO2 & Temperature & Humidity Sensor](https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD30-p-2911.html) sensor I had in my box of bits. The folks at Sensirion made it super easy to port their [SCD30 driver](https://github.com/Sensirion/embedded-scd) to Azure Sphere. It was really just a matter of implementing the I2C read and write functions and providing an implementation for microsecond sleep. It just worked, and the ported driver is included in this project.
 
 ### Azure IoT Central
 
-[Azure IoT Central](https://azure.microsoft.com/en-in/services/iot-central/?WT.mc_id=julyot-azd-dglover) provides an easy way to connect, monitor, and manage your Internet of Things (IoT) assets at scale.
+[Azure IoT Central](https://azure.microsoft.com/en-in/services/iot-central/?WT.mc_id=julyot-co2-dglover) provides an easy way to connect, monitor, and manage your Internet of Things (IoT) assets at scale.
 
-I created a free trial of [Azure IoT Central](https://azure.microsoft.com/en-gb/services/iot-central/) and in no time I had CO2, temperature, and humidity telemetry displayed (yup, the data is real!). By the way, you can continue to connect two devices for free to IoT Central after the trial period expires.
+I created a free trial of [Azure IoT Central](https://azure.microsoft.com/en-gb/services/iot-central/?WT.mc_id=julyot-co2-dglover) and in no time I had CO2, temperature, and humidity telemetry displayed (yup, the data is real!). By the way, you can continue to connect two devices for free to IoT Central after the trial period expires.
 
 ![](resources/iot-central-dash.png)
 
@@ -66,8 +64,9 @@ The solution supports two configurations.
 ## How to build the solution
 
 1. Clone this [CO2-levels-making-you-happy-grumpy-sleepy-or-sad](https://github.com/gloveboxes/CO2-levels-making-you-happy-grumpy-sleepy-or-sad) solution to your computer - Windows 10 or Linux Ubuntu 18.04/20.04.
-2. Included in the repo is an IoT Central Device Template capabilities model to make it easy to build the IoT Central application. Follow the example in the [Setting up Azure IoT Central](https://github.com/gloveboxes/Azure-Sphere-Learning-Path/tree/master/zdocs_vs_code_iot_central/Lab_2_Send_Telemetry_to_Azure_IoT_Central) hands on lab.
-3. Check out the [Azure Sphere Developer Learning Path](https://github.com/gloveboxes/Azure-Sphere-Learning-Path). You need to review the following two sections:
+2. You can use [Visual Studio 2019](https://visualstudio.microsoft.com/vs/?WT.mc_id=julyot-co2-dglover) (the free Community Edition or better) on Windows, or [Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=julyot-co2-dglover) on Windows or Linux.
+3. Included in the repo is an IoT Central Device Template capabilities model to make it easy to build the IoT Central application. Follow the example in the [Setting up Azure IoT Central](https://github.com/gloveboxes/Azure-Sphere-Learning-Path/tree/master/zdocs_vs_code_iot_central/Lab_2_Send_Telemetry_to_Azure_IoT_Central) hands on lab.
+4. Check out the [Azure Sphere Developer Learning Path](https://github.com/gloveboxes/Azure-Sphere-Learning-Path). You need to review the following two sections:
     1. [The development environment set up](https://github.com/gloveboxes/Azure-Sphere-Learning-Path/tree/master/zdocs_vs_code_iot_central/Lab_0_Introduction_and_Lab_Set_Up)
     2. [Setting up Azure IoT Central](https://github.com/gloveboxes/Azure-Sphere-Learning-Path/tree/master/zdocs_vs_code_iot_central/Lab_2_Send_Telemetry_to_Azure_IoT_Central) sections.
 
@@ -104,7 +103,7 @@ This content ranges from video demonstrations of real-world solutions,
 1. [5-part series on developing an Intelligent Video Analytics service](https://github.com/toolboc/Intelligent-Video-Analytics-with-NVIDIA-Jetson-and-Microsoft-Azure),  
 2. [IoT bird-box project for families](https://github.com/jimbobbennett/smart-garden-ornaments),  
 3. [Raspberry Pi air quality monitor backed by Azure IoT Central](https://www.youtube.com/watch?v=ayIrNB8gh68), 
-4. self-guided training series designed to help study for the [Azure 220 IoT Developer certification](https://docs.microsoft.com/en-us/learn/certifications/exams/az-220).
+4. self-guided training series designed to help study for the [Azure 220 IoT Developer certification](https://docs.microsoft.com/en-us/learn/certifications/exams/az-220?WT.mc_id=julyot-co2-dglover).
 
 All of this content will be made available on this [IoT Tech Community](http://aka.ms/julyot) page.  It is highly recommended that you bookmark this page.
 
