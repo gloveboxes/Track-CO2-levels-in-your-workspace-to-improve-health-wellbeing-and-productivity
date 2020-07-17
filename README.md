@@ -82,7 +82,7 @@ When I created the Azure IoT Central device template I created the following vie
 
 ![](https://raw.githubusercontent.com/gloveboxes/CO2-levels-making-you-happy-grumpy-sleepy-or-sad/master/resources/iot-central-view-properties.png)
 
-### Setting the CO2 alert level
+### Setting the CO2 alert level from the properties view
 
 From the properties view you can set the CO2 alert level. Azure IoT Central uses properties and ultimately Azure IoT Hub device twins to set the alert threshold on the device. 
 
