@@ -82,6 +82,14 @@ When I created the Azure IoT Central device template I created the following vie
 
 ![](https://raw.githubusercontent.com/gloveboxes/CO2-levels-making-you-happy-grumpy-sleepy-or-sad/master/resources/iot-central-view-properties.png)
 
+### Setting the CO2 alert level
+
+From the properties view you can set the CO2 alert level. Azure IoT Central uses properties and ultimately Azure IoT Hub device twins to set the alert threshold on the device. 
+
+When the CO2 level reaches the alert level on the device you can set an action. The action that has been defined in code is to switch on an LED, but you can go bigger, and instead of setting an LED you could drive a relay to turn on a light, buzz an alarm, or turn on a fan.
+
+Learn more about Azure IoT Central, properties, and device twins from Azure Sphere Developer Learning Path lab 3 [Set the room virtual thermostat with Azure IoT Device Twins](https://github.com/gloveboxes/Azure-Sphere-Learning-Path/tree/master/zdocs_vs_code_iot_central/Lab_3_Control_Device_with_Device_Twins).
+
 ### Telemetry view
 
 ![](https://raw.githubusercontent.com/gloveboxes/CO2-levels-making-you-happy-grumpy-sleepy-or-sad/master/resources/iot-central-view-telemetry.png)
