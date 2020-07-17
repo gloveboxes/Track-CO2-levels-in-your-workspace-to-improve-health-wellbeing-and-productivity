@@ -1,6 +1,8 @@
 # Build a healthier workspace by tracking CO2 levels
 
-How to build a healthier workspace by monitoring CO2, temperature, and humidity with [Azure Sphere](https://azure.microsoft.com/en-gb/services/azure-sphere/?WT.mc_id=julyot-co2-dglover), an SDC30 sensor and [Azure IoT Central](https://azure.microsoft.com/en-gb/services/iot-central/?WT.mc_id=julyot-co2-dglover).
+How to build a healthier working environment by monitoring CO2, temperature, and humidity levels with an [Azure Sphere](https://azure.microsoft.com/en-gb/services/azure-sphere/?WT.mc_id=julyot-co2-dglover), an [SDC30 sensor](https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD30-p-2911.html), and [Azure IoT Central](https://azure.microsoft.com/en-gb/services/iot-central/?WT.mc_id=julyot-co2-dglover).
+
+**Follow** me on **Twitter** [@dglover](https://twitter.com/dglover)
 
 ## #JulyOT
 
@@ -10,15 +12,13 @@ This is part of the #JulyOT [IoT Tech Community](http://aka.ms/julyot) series.
 |---|---|
 |![](resources/grumpy.png)| ![](resources/co2-ppm-chart.jpg) |
 
-**Follow** me on **Twitter** [@dglover](https://twitter.com/dglover)
-
 ---
 
 ## Are CO2 levels making you grumpy, sleepy, or sad
 
-Working from home it is easy to close the door to shut out the noise of everyday life while we get on with work. Carbon dioxide is a byproduct of our breathing and closing the door can mean Carbon Dioxide (CO2) is building up in our workspaces impacting our wellbeing, concentration, and productivity levels.
+Working from home it is easy to close the door to shut out the noise of everyday life while we get on with work. Closing the door can lead to a build up of CO2 gas, a byproduct of our breathing, which can impact our wellbeing, concentration, and productivity levels.
 
-For the science, then check out [The importance of Indoor Air Quality (IAQ) for Business Performance and Wellbeing](https://iotfactory.eu/the-importance-of-indoor-air-quality-iaq-for-business-performance-and-wellbeing/).
+For the science, check out [The importance of Indoor Air Quality (IAQ) for Business Performance and Wellbeing](https://iotfactory.eu/the-importance-of-indoor-air-quality-iaq-for-business-performance-and-wellbeing/).
 
 The problem is we can't see or smell Carbon Dioxide, it just keeps building up and we have no way of knowing it is happening other than getting tired or a headache. So with that in mind, I figured it was the Internet of Things to the rescue!
 
@@ -26,7 +26,7 @@ The problem is we can't see or smell Carbon Dioxide, it just keeps building up a
 
 ## The solution
 
-I wanted to build a secure IoT device with [Azure Sphere](https://azure.microsoft.com/en-gb/services/azure-sphere/?WT.mc_id=julyot-co2-dglover) using the [Seeed Studio Grove CO2 & Temperature & Humidity Sensor](https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD30-p-2911.html) sensor I had in my box of bits. The folks at Sensirion made it super easy to port their [SCD30 driver](https://github.com/Sensirion/embedded-scd) to Azure Sphere. It was really just a matter of implementing the I2C read and write functions and providing an implementation for microsecond sleep. It just worked, and the ported driver is included in this project.
+I wanted to build a secure IoT device with [Azure Sphere](https://azure.microsoft.com/en-gb/services/azure-sphere/?WT.mc_id=julyot-co2-dglover) using the [Seeed Studio Grove CO2 & Temperature & Humidity Sensor](https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD30-p-2911.html) sensor I had in my box of bits. The folks at Sensirion made it super easy to port their [SCD30 driver](https://github.com/Sensirion/embedded-scd) to Azure Sphere. It was just a matter of implementing the I2C read/write functions, a microsecond sleep function, plus setting up CMake build. It all just worked. The ported driver is included in this project.
 
 ### Azure IoT Central
 
@@ -90,7 +90,7 @@ When I created the Azure IoT Central device template I created the following vie
 
 **IMPORTANT**. Be sure to read up on calibrating the [Grove - CO2 & Temperature & Humidity Sensor (SCD30) Calibration](https://wiki.seeedstudio.com/Grove-CO2_Temperature_Humidity_Sensor-SCD30/#calibration) sensor.
 
-The code running on the Azure Sphere will check if auto-calibration is enabled on the sensor. If it is not then auto-calibration will be enabled.
+The code running on the Azure Sphere will enable auto-calibration.
 
 ---
 
