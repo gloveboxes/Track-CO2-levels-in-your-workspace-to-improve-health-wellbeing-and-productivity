@@ -1,6 +1,6 @@
 # Are CO2 levels making you happy, grumpy, sleepy, or sad
 
-How to build a workspace health CO2, temperature, and humidity monitor with Azure Sphere, a SDC30 sensor and Azure IoT Central.
+How to build a workspace health CO2, temperature, and humidity monitor with [Azure Sphere](https://azure.microsoft.com/en-gb/services/azure-sphere/), a SDC30 sensor and [Azure IoT Central](https://azure.microsoft.com/en-gb/services/iot-central/).
 
 **Follow** me on **Twitter** [@dglover](https://twitter.com/dglover)
 
@@ -10,9 +10,9 @@ Working from home it is easy to close the door to shut out the noise of everyday
 |---|---|
 |![](resources/grumpy.png)| ![](resources/co2-ppm-chart.jpg) |
 
-For the science then check out [The importance of Indoor Air Quality (IAQ) for Business Performance and Wellbeing](https://iotfactory.eu/the-importance-of-indoor-air-quality-iaq-for-business-performance-and-wellbeing/).
+For the science, then check out [The importance of Indoor Air Quality (IAQ) for Business Performance and Wellbeing](https://iotfactory.eu/the-importance-of-indoor-air-quality-iaq-for-business-performance-and-wellbeing/).
 
-The problem is we can't see or smell Carbon Dioxide, it just keeps building up and we have no way of knowing what it happening. So with that in mind, I figured it was Internet of Things to the rescue!
+The problem is we can't see or smell Carbon Dioxide, it just keeps building up and we have no way of knowing it is happening. So with that in mind, I figured it was Internet of Things to the rescue!
 
 ## The solution
 
@@ -20,26 +20,29 @@ I wanted to build a secure IoT device with [Azure Sphere](https://azure.microsof
 
 I created a free trial of [Azure IoT Central](https://azure.microsoft.com/en-gb/services/iot-central/) and in no time I had CO2, temperature, and humidity telemetry displayed (yup, the data is real!). By the way, you can continue to connect two devices for free to IoT Central after the trail period expires.
 
+![](resources/iot-central-dash.png)
+
 ## Parts list
 
 The solution supports two configurations:
 
 ### Seeed Studio Azure Sphere Mini Dev Board
 
-|Part | |
-|----|---|
-|[Seeed Studio Seeed Studio MT3620 Mini Dev Board](https://www.seeedstudio.com/mt3620-for-azure-sphere) | ![](resources/seeed-studio-azure-sphere-mini.png) |
-|[MT3620 Grove Breakout](https://www.seeedstudio.com/MT3620-Grove-Breakout-p-4043.html) | ![](resources/mt3620-grove-breakout-preview.png) |
-| [Seeed Studio Grove CO2 & Temperature & Humidity Sensor](https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD30-p-2911.html) | ![](resources/scd30.png)|
 
-### AVNET Azure Sphere Start Kit
-
-
-![](resources/iot-central-dash.png)
+1. [Seeed Studio Seeed Studio MT3620 Mini Dev Board](https://www.seeedstudio.com/mt3620-for-azure-sphere)
+2. [MT3620 Grove Breakout](https://www.seeedstudio.com/MT3620-Grove-Breakout-p-4043.html)
+3. [Seeed Studio Grove CO2 & Temperature & Humidity Sensor](https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD30-p-2911.html)
+4. Optional, [3 x Grove LEDs](![](resources/seeed_studio-azure-sphere_mini.jpg)), or a [Grove Relay](https://www.seeedstudio.com/Grove-Relay.html) to drive a bigger warning light!
 
 ![](resources/seeed_studio-azure-sphere_mini.jpg)
 
-## Parts list
+### AVNET Azure Sphere Starter Kit
+
+1. [AVNET Azure Sphere Starter Kit](https://www.avnet.com/shop/us/products/avnet-engineering-services/aes-ms-mt3620-sk-g-3074457345636825680/)
+2. [Seeed Studio Grove CO2 & Temperature & Humidity Sensor](https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD30-p-2911.html)
+3. Optional, 1 x [Click Relay](https://www.mikroe.com/relay-click) to drive a bigger warning light.
+
+
 
 ---
 
