@@ -96,9 +96,9 @@ The code running on the Azure Sphere will enable auto-calibration.
 
 ## #JulyOT
 
-The month of [#JulyOT](https://twitter.com/hashtag/JulyOT?src=hash&ref_src=twsrc%5Etfw) is here!  To celebrate, we have curated a collection of  blog posts, hands-on-labs, and videos designed to demonstrate and teach developers how to build projects with Azure Internet of Things (IoT) services.   
+The month of [#JulyOT](https://twitter.com/hashtag/JulyOT?src=hash&ref_src=twsrc%5Etfw) is here!  To celebrate, we have curated a collection of  blog posts, hands-on-labs, and videos designed to demonstrate and teach developers how to build projects with Azure Internet of Things (IoT) services.
 
-This content ranges from video demonstrations of real-world solutions, 
+This content ranges from video demonstrations of real-world solutions.
 
 1. [5-part series on developing an Intelligent Video Analytics service](https://github.com/toolboc/Intelligent-Video-Analytics-with-NVIDIA-Jetson-and-Microsoft-Azure),  
 2. [IoT bird-box project for families](https://github.com/jimbobbennett/smart-garden-ornaments),  
