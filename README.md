@@ -58,6 +58,13 @@ The solution supports two configurations.
 
 ### Connect Grove peripherals
 
+Attach the Azure Sphere to the Grove Breakout board and plug in the following peripherals.
+
+1. Green LED plugged into Grove Socket D1
+2. Red LED plugged into Grove Socket D0
+3. Blue LED plugged into Grove Socket UART0
+4. CO2, Temperature, & Humidity sensor into Grove Socket I2C
+
 ![](https://raw.githubusercontent.com/gloveboxes/CO2-levels-making-you-happy-grumpy-sleepy-or-sad/master/resources/seeed_studio-azure-sphere_mini-co2-monitor.jpg)
 
 ### AVNET Azure Sphere Starter Kit
@@ -66,7 +73,9 @@ The solution supports two configurations.
 2. [Seeed Studio Grove CO2 & Temperature & Humidity Sensor](https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD30-p-2911.html)
 3. Optional, 1 x [Click Relay](https://www.mikroe.com/relay-click) to drive a bigger warning light.
 
-### Connect Grove peripherals
+### Connect the Grove peripheral
+
+1. Plug the CO2, Temperature, & Humidity sensor into Grove Socket I2C on the AVNET Starter Kit.
 
 ![](https://raw.githubusercontent.com/gloveboxes/CO2-levels-making-you-happy-grumpy-sleepy-or-sad/master/resources/avnet_azure_sphere_starter_kit.jpg)
 
