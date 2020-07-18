@@ -97,17 +97,19 @@ git clone https://github.com/gloveboxes/CO2-levels-making-you-happy-grumpy-sleep
 
 ---
 
-## Azure IoT
+## Set up you developer tools and your Azure Sphere
+
+Follow the Azure Sphere Developer Learning Path [Lab Set Up](https://github.com/gloveboxes/Azure-Sphere-Learning-Path/tree/master/zdocs_vs_code_iot_central/Lab_0_Introduction_and_Lab_Set_Up) to set up the developer tools, claim you Azure Sphere, and configure the device WiFi, and enable developer mode.
+
+---
+
+## Azure IoT Central
 
 Your Azure Sphere device can securely connect and communicate with cloud services. Azure Sphere includes built-in library support for both Azure IoT Hub and Azure IoT Central. This lab focuses on Azure IoT Central.
 
 This project leverages the [Azure IoT Hub Device Provisioning Service (PDS)](https://docs.microsoft.com/en-us/azure-sphere/app-development/use-azure-iot?WT.mc_id=github-blog-dglover), which is included with Azure IoT Central. The Device Provisioning Service (DPS) enables zero-touch, just-in-time, large scale device provisioning.
 
 Take a moment to read [Your IoT journey: simplified and secure with Azure IoT Central and Azure Sphere](https://techcommunity.microsoft.com/t5/internet-of-things/your-iot-journey-simplified-and-secure-with-azure-iot-central/ba-p/1404247).
-
----
-
-## Azure IoT Central
 
 [Azure IoT Central](https://azure.microsoft.com/en-in/services/iot-central/?WT.mc_id=github-blog-dglover) provides an easy way to connect, monitor, and manage your Internet of Things (IoT) assets at scale.
 
@@ -167,7 +169,7 @@ For more information on device templates, review the [Define a new IoT device ty
 ### Import a Capability Model
 
 1. Click **Import capability model**
-2. Navigate to the folder you cloned the Azure Sphere Developer Learning Path into.
+2. Navigate to the folder you cloned the CO2 Monitor solution into.
 3. Navigate to the **iot_central** folder.
 4. Select **CO2_Monitor_Capability_Model.json** and open
 
@@ -177,10 +179,13 @@ For more information on device templates, review the [Define a new IoT device ty
     ![](resources/iot-central-create-a-view.png)
 2. Select **Visualizing the device**.
     ![](resources/iot-central-add-tile-status.png)
-3. Select **Humidity** and **Temperature** telemetry items.
-    ![](resources/iot-central-add-tile-environment.png)
-4. Click **Add Tile**.
-5. Click **Save** to save the view.
+3. Expand the **Telemetry** section
+4. Select **Carbon Dioxide (ppm)**
+5. Click **Add Tile**
+6. Select **Humidity** and **Temperature** telemetry items.
+7. Click **Add Tile**.
+8. Click **Save** to save the view.
+    ![](resources/iot-central-view-save.png)
 
 ### Create a properties form
 
@@ -189,9 +194,9 @@ For more information on device templates, review the [Define a new IoT device ty
     ![](resources/iot-central-view-properties-create.png)
 3. Expand the **Properties** section.
 4. Select **all properties**.
-    ![](resources/iot-central-add-tile-form.png)
 5. Click **Add Section**.
 6. Click **Save** to save the form.
+    ![](resources/iot-central-properties-save.png)
 
 ### Publish the device template
 
@@ -214,7 +219,7 @@ Devices claimed by your Azure Sphere tenant will be automatically enrolled when 
 ### Download the tenant authentication CA certificate
 
 1. Open an **Azure Sphere Developer Command Prompt**
-2. Be sure to make a note of the current directory, or change to the Azure Sphere Learning path directory. You will need the name of this directory in the next step. 
+2. Be sure to make a note of the current directory, or change to the CO2 Monitor directory. You will need the name of this directory in the next step. 
 3. Download the Certificate Authority (CA) certificate for your Azure Sphere tenant:
 
     ```bash
@@ -341,7 +346,7 @@ For more information on device templates, review the [Define a new IoT device ty
 
 ### Step 3: Set your developer board configuration
 
-These labs support developer boards from AVNET Starter Kit and the Seeed Studio Mini Dev Board with the Grove Breakout. You need to set the configuration that matches your developer board.
+This solution supports the AVNET Starter Kit and the Seeed Studio Mini Dev Board with the Grove Breakout. You need to set the configuration that matches your developer board.
 
 The default developer board configuration is for the AVENT Azure Sphere Starter Kit. If you have this board, there is no additional configuration required.
 
@@ -431,17 +436,7 @@ The default developer board configuration is for the AVENT Azure Sphere Starter 
 	> Pro Tip. You can open the output window by using the Visual Studio Code <kbd>Ctrl+K Ctrl+H</kbd> shortcut or click the **Output** tab.
 2. You will see the device negotiating security, and then it will start sending telemetry to Azure IoT Central.
 
-#### Notes
-
-1. You may see a couple of *ERROR: failure to create IoTHub Handle* messages displayed. These messages occur while the connection to IoT Central is being negotiated.
-
----
-
-## Understanding the Azure Sphere Application
-
-### Device twins
-
-**TODO TODO TODO**
+> You may see a couple of *ERROR: failure to create IoTHub Handle* messages displayed. These messages occur while the connection to IoT Central is being negotiated.
 
 ---
 
@@ -451,15 +446,17 @@ The default developer board configuration is for the AVENT Azure Sphere Starter 
 
 ![](https://raw.githubusercontent.com/gloveboxes/CO2-levels-making-you-happy-grumpy-sleepy-or-sad/master/resources/avnet_azure_sphere_starter_kit.jpg)
 
-1. The blue LED will start to blink.
-2. LED3 will turn yellow when connected to Azure. 
-3. Press **Button A** on the device to change the blink rate.
+1. The yellow WLAN LED will turn on when a connection is established with IoT Central.
+2. The RBG will turn red or blue depending on HVAC Temperature you set in IoT Central.
+3. The App Status LED will turn on if the CO2 level exceeds the CO2 alert level set in IoT Central.
 
 ### Seeed Studio MT3620 Mini Dev Board
 
 ![](https://raw.githubusercontent.com/gloveboxes/CO2-levels-making-you-happy-grumpy-sleepy-or-sad/master/resources/seeed_studio-azure-sphere_mini-co2-monitor.jpg)
 
-1. The green LED closest to the USB connector will start to blink.
+1. The yellow User LED will turn on when a connection is established with IoT Central.
+2. The red or blue LED will turn depending on HVAC Temperature you set in IoT Central.
+3. The green LED will turn on if the CO2 level exceeds the CO2 alert level set in IoT Central.
 
 ---
 
@@ -478,14 +475,14 @@ The default developer board configuration is for the AVENT Azure Sphere Starter 
 
 ## Step 4: Migrate your device to the Azure Sphere Template
 
-You need to **Migrate** the newly enrolled device to the **Azure Sphere** template. The template maps the JSON formatted telemetry to the dashboard.
+You need to **Migrate** the newly enrolled device to the **Carbon Dioxide Monitor** template. The template maps the JSON formatted telemetry to the dashboard.
 
 1. Select the newly enrolled device from the **All devices** template.
 2. Click **Migrate**
 
     ![](resources/iot-central-migrate-device.png)
 
-3. Select the Azure Sphere Template, and then click migrate.
+3. Select the **Carbon Dioxide Monitor** Template, and then click migrate.
 
     ![](resources/iot-central-migrate-select-template.png)
 
@@ -494,23 +491,24 @@ You need to **Migrate** the newly enrolled device to the **Azure Sphere** templa
 ## Step 5: Display the Azure Sphere device telemetry
 
 1. Click **Devices** on the sidebar.
-2. Select the **Azure Sphere** template.
+2. Select the **Carbon Dioxide** template.
 3. Click on the migrated device.
 4. Select the **View** tab to view the device telemetry.
 5. Rename your device. Click the **Rename** button and give your device a friendly name.
 
 > Azure IoT Central does not update immediately. It may take a minute or two for the temperature, humidity, and pressure telemetry to be displayed.
 
-![](resources/iot-central-display-measurements.png)
-
-
-
-
-
-
+![](https://raw.githubusercontent.com/gloveboxes/CO2-levels-making-you-happy-grumpy-sleepy-or-sad/master/resources/iot-central-dash.png)
 
 ### Properties view
 
+You can view and set device properties from the **Form** tab.
+
+![](resources/iot-central-set-desired-property-state.png)
+
+### Setting the HVAC thermostat
+
+The device simulates an HVAC. If the current temperature read by the device is greater than the thermostat setting then the blue LED will turn on to signify the room needs to be cooled. If the room temperature is less than the thermostat setting the red LED will be turned on to signify the heater needs to be turned on.
 
 ### Setting the CO2 alert level from the properties view
 
@@ -518,9 +516,9 @@ From the properties view you can set the CO2 alert level. Azure IoT Central uses
 
 When the CO2 level reaches the alert level on the device you can set an action. The action that has been defined in code is to switch on an LED, but you can go bigger, and instead of setting an LED you could drive a relay to turn on a light, buzz an alarm, or turn on a fan.
 
+### Learn more about IoT Central properties and Azure IoT Hub device twins
+
 Learn more about Azure IoT Central, properties, and device twins from Azure Sphere Developer Learning Path lab 3 [Set the room virtual thermostat with Azure IoT Device Twins](https://github.com/gloveboxes/Azure-Sphere-Learning-Path/tree/master/zdocs_vs_code_iot_central/Lab_3_Control_Device_with_Device_Twins).
-
-
 
 ---
 
