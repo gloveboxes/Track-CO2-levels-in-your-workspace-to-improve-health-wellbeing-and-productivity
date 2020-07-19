@@ -16,9 +16,8 @@ Please follow on [#JulyOT](https://twitter.com/hashtag/JulyOT) on Twitter.
 
 ## Source code and learning resources
 
-The complete source for this sample is at [Azure Sphere CO2 Monitor](https://github.com/gloveboxes/CO2-levels-making-you-happy-grumpy-sleepy-or-sad).
-
-Learn more about Azure Sphere development with the [Azure Sphere Developer Learning Path](https://github.com/gloveboxes/Azure-Sphere-Learning-Path).
+* Source code: [Track CO2 levels in your workspace to improve health, wellbeing, and productivity](https://github.com/gloveboxes/CO2-levels-making-you-happy-grumpy-sleepy-or-sad).
+* Learning resources: [Azure Sphere Developer Learning Path](https://github.com/gloveboxes/Azure-Sphere-Learning-Path).
 
 ---
 
