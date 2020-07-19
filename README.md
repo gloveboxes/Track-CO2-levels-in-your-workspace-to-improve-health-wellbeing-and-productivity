@@ -44,6 +44,10 @@ I created a free trial of [Azure IoT Central](https://azure.microsoft.com/en-gb/
 
 ![](https://raw.githubusercontent.com/gloveboxes/CO2-levels-making-you-happy-grumpy-sleepy-or-sad/master/resources/iot-central-dash.png)
 
+### Extend and integrate Azure IoT Central applications with other cloud services
+
+Azure IoT Central is also extensible using rules and workflows. For more information, review [Use workflows to integrate your Azure IoT Central application with other cloud services](https://docs.microsoft.com/en-us/azure/iot-central/core/howto-configure-rules-advanced?WT.mc_id=julyot-co2-dglover)
+
 ---
 
 ## Parts list
@@ -516,6 +520,12 @@ When the CO2 level reaches the alert level on the device you can set an action. 
 ### Learn more about IoT Central properties and Azure IoT Hub device twins
 
 Learn more about Azure IoT Central, properties, and device twins from Azure Sphere Developer Learning Path lab 3 [Set the room virtual thermostat with Azure IoT Device Twins](https://github.com/gloveboxes/Azure-Sphere-Learning-Path/tree/master/zdocs_vs_code_iot_central/Lab_3_Control_Device_with_Device_Twins).
+
+---
+
+## Extend and integrate Azure IoT Central applications with other cloud services
+
+Azure IoT Central is also extensible using rules and workflows. For more information, review [Use workflows to integrate your Azure IoT Central application with other cloud services](https://docs.microsoft.com/en-us/azure/iot-central/core/howto-configure-rules-advanced?WT.mc_id=julyot-co2-dglover)
 
 ---
 
