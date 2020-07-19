@@ -8,7 +8,7 @@ How to build a healthier working environment by monitoring CO2, temperature, and
 
 ## #JulyOT
 
-This is part of the #JulyOT [IoT Tech Community](http://aka.ms/julyot) series, a collection of  blog posts, hands-on-labs, and videos designed to demonstrate and teach developers how to build projects with Azure Internet of Things (IoT) services. Please also follow [#JulyOT](https://twitter.com/hashtag/JulyOT) on Twitter.
+This is part of the #JulyOT [IoT Tech Community](http://aka.ms/julyot) series, a collection of blog posts, hands-on-labs, and videos designed to demonstrate and teach developers how to build projects with Azure Internet of Things (IoT) services. Please also follow [#JulyOT](https://twitter.com/hashtag/JulyOT) on Twitter.
 
 ---
 
