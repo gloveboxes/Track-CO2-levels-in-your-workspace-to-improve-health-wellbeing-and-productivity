@@ -2,7 +2,7 @@
 
 How to build a healthier working environment by monitoring CO2, temperature, and humidity levels with a [Seeed Studio Azure Sphere device](https://azure.microsoft.com/en-gb/services/azure-sphere/?WT.mc_id=julyot-co2-dglover), an [SDC30 sensor](https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD30-p-2911.html), and [Azure IoT Central](https://azure.microsoft.com/en-gb/services/iot-central/?WT.mc_id=julyot-co2-dglover).
 
-![](https://raw.githubusercontent.com/gloveboxes/CO2-levels-making-you-happy-grumpy-sleepy-or-sad/master/resources/banner.png)
+![](https://raw.githubusercontent.com/gloveboxes/CO2-levels-making-you-happy-grumpy-sleepy-or-sad/master/resources/banner-seeed.png)
 
 ---
 
