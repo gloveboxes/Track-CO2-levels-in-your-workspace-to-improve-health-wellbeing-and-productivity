@@ -16,6 +16,8 @@ This is part of the #JulyOT [IoT Tech Community](http://aka.ms/julyot) series, a
 
 Working from home it is easy to close the door to shut out the noise of everyday life while we get on with work. Closing the door can lead to a build-up of CO2 gas, a by-product of our breathing, which can impact our wellbeing, concentration, and productivity levels.
 
+Check out "[Indoor carbon dioxide levels could be a health hazard, scientists warn](https://www.theguardian.com/environment/2019/jul/08/indoor-carbon-dioxide-levels-could-be-a-health-hazard-scientists-warn)".
+
 The problem is we cannot see or smell Carbon Dioxide, it just keeps building up and we have no way of knowing it is happening other than getting tired or a headache. So, with that in mind, I figured it was the Internet of Things to the rescue!
 
 ---
@@ -58,7 +60,7 @@ Attach the Azure Sphere to the Grove Breakout board and plug in the following pe
 
 ## Get started
 
-Follow the complete guide to "[Track CO2 levels in your workspace to improve health, wellbeing, and productivity](https://github.com/gloveboxes/CO2-levels-making-you-happy-grumpy-sleepy-or-sad)"
+Follow the complete guide to "[Track CO2 levels in your workspace to improve health, wellbeing, and productivity](https://gloveboxes.github.io/Track-CO2-levels-in-your-workspace-to-improve-health-wellbeing-and-productivity/)"
 
 ### Learning resources
 
