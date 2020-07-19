@@ -8,16 +8,15 @@ How to build a healthier working environment by monitoring CO2, temperature, and
 
 ## #JulyOT
 
-This is part of the #JulyOT [IoT Tech Community](http://aka.ms/julyot) series, a collection of  blog posts, hands-on-labs, and videos designed to demonstrate and teach developers how to build projects with Azure Internet of Things (IoT) services.
-
-Please follow on [#JulyOT](https://twitter.com/hashtag/JulyOT) on Twitter.
+This is part of the #JulyOT [IoT Tech Community](http://aka.ms/julyot) series, a collection of  blog posts, hands-on-labs, and videos designed to demonstrate and teach developers how to build projects with Azure Internet of Things (IoT) services. Please also follow [#JulyOT](https://twitter.com/hashtag/JulyOT) on Twitter.
 
 ---
 
 ## Source code and learning resources
 
-* Source code: [Track CO2 levels in your workspace to improve health, wellbeing, and productivity](https://github.com/gloveboxes/CO2-levels-making-you-happy-grumpy-sleepy-or-sad).
-* Learning resources: [Azure Sphere Developer Learning Path](https://github.com/gloveboxes/Azure-Sphere-Learning-Path).
+Source code: [Track CO2 levels in your workspace to improve health, wellbeing, and productivity](https://github.com/gloveboxes/CO2-levels-making-you-happy-grumpy-sleepy-or-sad).
+
+Learning resources: [Azure Sphere Developer Learning Path](https://github.com/gloveboxes/Azure-Sphere-Learning-Path).
 
 ---
 
@@ -25,7 +24,7 @@ Please follow on [#JulyOT](https://twitter.com/hashtag/JulyOT) on Twitter.
 
 Working from home it is easy to close the door to shut out the noise of everyday life while we get on with work. Closing the door can lead to a build-up of CO2 gas, a by-product of our breathing, which can impact our wellbeing, concentration, and productivity levels.
 
-For the science, check out [The importance of Indoor Air Quality (IAQ) for Business Performance and Wellbeing](https://iotfactory.eu/the-importance-of-indoor-air-quality-iaq-for-business-performance-and-wellbeing/).
+Check out "[The importance of Indoor Air Quality (IAQ) for Business Performance and Wellbeing](https://iotfactory.eu/the-importance-of-indoor-air-quality-iaq-for-business-performance-and-wellbeing/)".
 
 The problem is we cannot see or smell Carbon Dioxide, it just keeps building up and we have no way of knowing it is happening other than getting tired or a headache. So, with that in mind, I figured it was the Internet of Things to the rescue!
 
@@ -35,7 +34,9 @@ The problem is we cannot see or smell Carbon Dioxide, it just keeps building up 
 
 I wanted to build a secure IoT device with [Azure Sphere](https://azure.microsoft.com/en-gb/services/azure-sphere/?WT.mc_id=julyot-co2-dglover) using the [Seeed Studio Grove CO2 & Temperature & Humidity Sensor](https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD30-p-2911.html) sensor I had in my box of bits. The folks at Sensirion made it super easy to port their [SCD30 driver](https://github.com/Sensirion/embedded-scd) to Azure Sphere. It was just a matter of implementing the I2C init/read/write functions, a microsecond sleep function, plus setting up CMake build. It all just worked. The ported driver is included in this project.
 
-### Azure IoT Central
+---
+
+## Azure IoT Central
 
 [Azure IoT Central](https://azure.microsoft.com/en-in/services/iot-central/?WT.mc_id=julyot-co2-dglover) provides an easy way to connect, monitor, and manage your Internet of Things (IoT) assets at scale.
 
@@ -105,43 +106,39 @@ Follow the Azure Sphere Developer Learning Path [Lab Set Up](https://github.com/
 
 ## Azure IoT Central
 
-Your Azure Sphere device can securely connect and communicate with cloud services. Azure Sphere includes built-in library support for both Azure IoT Hub and Azure IoT Central. This lab focuses on Azure IoT Central.
+Your Azure Sphere device can securely connect and communicate with cloud services. Azure Sphere includes built-in library support for both Azure IoT Hub and Azure IoT Central. This lab focuses on Azure IoT Central. Take a moment to read [Your IoT journey: simplified and secure with Azure IoT Central and Azure Sphere](https://techcommunity.microsoft.com/t5/internet-of-things/your-iot-journey-simplified-and-secure-with-azure-iot-central/ba-p/1404247?WT.mc_id=julyot-co2-dglover).
 
-This project leverages the [Azure IoT Hub Device Provisioning Service (PDS)](https://docs.microsoft.com/en-us/azure-sphere/app-development/use-azure-iot?WT.mc_id=github-blog-dglover), which is included with Azure IoT Central. The Device Provisioning Service (DPS) enables zero-touch, just-in-time, large scale device provisioning.
+[Azure IoT Central](https://azure.microsoft.com/en-in/services/iot-central/?WT.mc_id=julyot-co2-dglover) provides an easy way to connect, monitor, and manage your Internet of Things (IoT) assets at scale.
 
-Take a moment to read [Your IoT journey: simplified and secure with Azure IoT Central and Azure Sphere](https://techcommunity.microsoft.com/t5/internet-of-things/your-iot-journey-simplified-and-secure-with-azure-iot-central/ba-p/1404247).
-
-[Azure IoT Central](https://azure.microsoft.com/en-in/services/iot-central/?WT.mc_id=github-blog-dglover) provides an easy way to connect, monitor, and manage your Internet of Things (IoT) assets at scale.
-
-![Azure IoT Central](resources/azure-iot-central.jpg)
+![Azure IoT Central](https://raw.githubusercontent.com/gloveboxes/Track-CO2-levels-in-your-workspace-to-improve-health-wellbeing-and-productivity/master/resources/azure-iot-central.jpg)
 
 ---
 
 ## Step 1: Create a new IoT Central Application
 
-1. So the lab instructions are still visible, right mouse click, and open this link "[Azure IoT Central](https://azure.microsoft.com/en-au/services/iot-central/?WT.mc_id=pycon-blog-dglover)" in a new window.
+1. So the lab instructions are still visible, right mouse click, and open this link "[Azure IoT Central](https://azure.microsoft.com/en-au/services/iot-central/?WT.mc_id=julyot-co2-dglover)" in a new window.
 
 2. Click **Build a solution**.
 
 3. Next, you will need to sign with your Microsoft Personal, or Work, or School account. If you do not have a Microsoft account, then you can create one for free using the **Create one!** link.
 
-    ![iot central](resources/iot-central-login.png)
+    ![iot central](https://raw.githubusercontent.com/gloveboxes/Track-CO2-levels-in-your-workspace-to-improve-health-wellbeing-and-productivity/master/resources/iot-central-login.png)
 
 4. Expand the sidebar menu by clicking on the **Burger menu** icon.
 
-    ![](resources/iot-central-burger-menu.png)
+    ![](https://raw.githubusercontent.com/gloveboxes/Track-CO2-levels-in-your-workspace-to-improve-health-wellbeing-and-productivity/master/resources/iot-central-burger-menu.png)
 
 5. Click **+ New application** to create a new Azure IoT Central application. 
 
 6. Select **Custom app**
 
-    ![](resources/iot-central-custom-app.png)
+    ![](https://raw.githubusercontent.com/gloveboxes/Track-CO2-levels-in-your-workspace-to-improve-health-wellbeing-and-productivity/master/resources/iot-central-custom-app.png)
 
 ### Create a new application
 
 1. Specify the **Application name**, the **URL**, select the **Free** pricing plan, and complete the registration form. 
 
-    ![](resources/iot-central-new-application.png)
+    ![](https://raw.githubusercontent.com/gloveboxes/Track-CO2-levels-in-your-workspace-to-improve-health-wellbeing-and-productivity/master/resources/iot-central-new-application.png)
 
 2. Then click **Create**.
 
@@ -149,14 +146,14 @@ Take a moment to read [Your IoT journey: simplified and secure with Azure IoT Ce
 
 A device template is a blueprint that defines the characteristics and behaviors of a type of device that connects to an Azure IoT Central application.
 
-For more information on device templates, review the [Define a new IoT device type in your Azure IoT Central application](https://docs.microsoft.com/en-us/azure/iot-central/core/howto-set-up-template?WT.mc_id=github-blog-dglover) article. 
+For more information on device templates, review the [Define a new IoT device type in your Azure IoT Central application](https://docs.microsoft.com/en-us/azure/iot-central/core/howto-set-up-template?WT.mc_id=julyot-co2-dglover) article. 
 
 1. Click **Device templates**, then **+ New**.
-    ![](resources/iot-central-template-new.png)
+    ![](https://raw.githubusercontent.com/gloveboxes/Track-CO2-levels-in-your-workspace-to-improve-health-wellbeing-and-productivity/master/resources/iot-central-template-new.png)
 
 2. Click the **IoT device** template type.
 
-    ![](resources/iot-central-new-iot-device-template.png)
+    ![](https://raw.githubusercontent.com/gloveboxes/Track-CO2-levels-in-your-workspace-to-improve-health-wellbeing-and-productivity/master/resources/iot-central-new-iot-device-template.png)
 
 3. Create an **IoT Device** Template.
 
@@ -176,37 +173,37 @@ For more information on device templates, review the [Define a new IoT device ty
 ### Create a device visualization view
 
 1. Click **Views**.
-    ![](resources/iot-central-create-a-view.png)
+    ![](https://raw.githubusercontent.com/gloveboxes/Track-CO2-levels-in-your-workspace-to-improve-health-wellbeing-and-productivity/master/resources/iot-central-create-a-view.png)
 2. Select **Visualizing the device**.
-    ![](resources/iot-central-add-tile-status.png)
+    ![](https://raw.githubusercontent.com/gloveboxes/Track-CO2-levels-in-your-workspace-to-improve-health-wellbeing-and-productivity/master/resources/iot-central-add-tile-status.png)
 3. Expand the **Telemetry** section
 4. Select **Carbon Dioxide (ppm)**
 5. Click **Add Tile**
 6. Select **Humidity** and **Temperature** telemetry items.
 7. Click **Add Tile**.
 8. Click **Save** to save the view.
-    ![](resources/iot-central-view-save.png)
+    ![](https://raw.githubusercontent.com/gloveboxes/Track-CO2-levels-in-your-workspace-to-improve-health-wellbeing-and-productivity/master/resources/iot-central-view-save.png)
 
 ### Create a properties form
 
 1. Click **Views**.
 2. Click the **Editing device and cloud data** option.
-    ![](resources/iot-central-view-properties-create.png)
+    ![](https://raw.githubusercontent.com/gloveboxes/Track-CO2-levels-in-your-workspace-to-improve-health-wellbeing-and-productivity/master/resources/iot-central-view-properties-create.png)
 3. Expand the **Properties** section.
 4. Select **all properties**.
 5. Click **Add Section**.
 6. Click **Save** to save the form.
-    ![](resources/iot-central-properties-save.png)
+    ![](https://raw.githubusercontent.com/gloveboxes/Track-CO2-levels-in-your-workspace-to-improve-health-wellbeing-and-productivity/master/resources/iot-central-properties-save.png)
 
 ### Publish the device template
 
 1. Click **Publish** to publish the template. Publishing the template makes it available for devices.
-    ![](resources/iot-central-template-publish.png)
+    ![](https://raw.githubusercontent.com/gloveboxes/Track-CO2-levels-in-your-workspace-to-improve-health-wellbeing-and-productivity/master/resources/iot-central-template-publish.png)
     <br/>
 
 2. Next, confirm and click **Publish**
 
->See [Define a new IoT device type in your Azure IoT Central application](https://docs.microsoft.com/en-us/azure/iot-central/core/howto-set-up-template?WT.mc_id=github-blog-dglover) for information on creating your own device templates.
+>See [Define a new IoT device type in your Azure IoT Central application](https://docs.microsoft.com/en-us/azure/iot-central/core/howto-set-up-template?WT.mc_id=julyot-co2-dglover) for information on creating your own device templates.
 
 ---
 
@@ -238,7 +235,7 @@ Devices claimed by your Azure Sphere tenant will be automatically enrolled when 
 
 4. Click the Refresh icon to the right of the Verification Code box to generate a verification code. Copy the verification code to the clipboard.
 
-    ![](resources/iot-central-certificate-verify.png)
+    ![](https://raw.githubusercontent.com/gloveboxes/Track-CO2-levels-in-your-workspace-to-improve-health-wellbeing-and-productivity/master/resources/iot-central-certificate-verify.png)
 
 ### Verify the tenant CA certificate
 
@@ -256,7 +253,7 @@ Devices claimed by your Azure Sphere tenant will be automatically enrolled when 
 1. Return to Azure IoT Central and click Verify.
 2. When prompted, navigate to the validation certificate that you downloaded in the previous step and select it. When the verification process is complete, the Primary Certificate dialog box displays the Verified message. Click Close to dismiss the box.
 
-    ![](resources/iot-central-certificate-verified.png)
+    ![](https://raw.githubusercontent.com/gloveboxes/Track-CO2-levels-in-your-workspace-to-improve-health-wellbeing-and-productivity/master/resources/iot-central-certificate-verified.png)
 
 After you complete these steps, any device that is claimed into your Azure Sphere tenant will automatically be enrolled in your Azure IoT Central application when it first connects.
 
@@ -284,7 +281,7 @@ Follow these steps:
 4. Run the **ShowIoTCentralConfig** tool.
     Now follow the prompts that the tool provides, and copy the information from the output into the app_manifest.json file in Visual Studio.
 
-    > **Note**: Your organization might require consent for the ShowIoTCentralConfig tool to access your Azure IoT Central data in the same way that the Azure API requires such consent. In some organizations, [enterprise application permissions](https://docs.microsoft.com/azure-sphere/install/admin-consent) must be granted by an IT administrator.
+    > **Note**: Your organization might require consent for the ShowIoTCentralConfig tool to access your Azure IoT Central data in the same way that the Azure API requires such consent. In some organizations, [enterprise application permissions](https://docs.microsoft.com/azure-sphere/install/admin-consent?WT.mc_id=julyot-co2-dglover) must be granted by an IT administrator.
 5. Review the output from the **ShowIoTCentralConfig** tool. It will look similar to the following text.
 
     </br>
@@ -321,13 +318,13 @@ We need the ID of the Azure Sphere Tenant that is now trusted by Azure IoT Centr
 
 A device template is a blueprint that defines the characteristics and behaviors of a type of device that connects to an Azure IoT Central application.
 
-For more information on device templates, review the [Define a new IoT device type in your Azure IoT Central application](https://docs.microsoft.com/en-us/azure/iot-central/core/howto-set-up-template?WT.mc_id=github-blog-dglover) article. 
+For more information on device templates, review the [Define a new IoT device type in your Azure IoT Central application](https://docs.microsoft.com/en-us/azure/iot-central/core/howto-set-up-template?WT.mc_id=julyot-co2-dglover) article. 
 
 1. From Azure IoT Central, navigate to **Device templates**, and select the **Azure Sphere** template.
 2. Click on **Interfaces** to list the interface capabilities.
 3. Explore the IoT Central device template interfaces, properties, and views.
 
-![](resources/iot-central-device-template-display.png) -->
+![](https://raw.githubusercontent.com/gloveboxes/Track-CO2-levels-in-your-workspace-to-improve-health-wellbeing-and-productivity/master/resources/iot-central-device-template-display.png) -->
 
 ---
 
@@ -335,7 +332,7 @@ For more information on device templates, review the [Define a new IoT device ty
 
 ### Step 1: Start Visual Studio Code
 
-![](resources/vs-code-start.png)
+![](https://raw.githubusercontent.com/gloveboxes/Track-CO2-levels-in-your-workspace-to-improve-health-wellbeing-and-productivity/master/resources/vs-code-start.png)
 
 ### Step 2: Open the lab project
 
@@ -351,7 +348,7 @@ This solution supports the AVNET Starter Kit and the Seeed Studio Mini Dev Board
 The default developer board configuration is for the AVENT Azure Sphere Starter Kit. If you have this board, there is no additional configuration required.
 
 1. Open CMakeList.txt
-	![](resources/vs-code-open-cmake.png)
+	![](https://raw.githubusercontent.com/gloveboxes/Track-CO2-levels-in-your-workspace-to-improve-health-wellbeing-and-productivity/master/resources/vs-code-open-cmake.png)
 2. Add a # at the beginning of the set AVNET line to disable it.
 3. Uncomment the **set** command that corresponds to your Azure Sphere developer board.
 
@@ -367,7 +364,7 @@ The default developer board configuration is for the AVENT Azure Sphere Starter 
 
 1. Open the **app_manifest.json** file
 
-    ![](resources/vs-code-open-app-manifest.png)
+    ![](https://raw.githubusercontent.com/gloveboxes/Track-CO2-levels-in-your-workspace-to-improve-health-wellbeing-and-productivity/master/resources/vs-code-open-app-manifest.png)
 
 2. Update the Azure IoT Central Application connection properties.
     * Update **CmdArgs** with your Azure IoT Central **ID Scope**. 
@@ -424,7 +421,7 @@ The default developer board configuration is for the AVENT Azure Sphere Starter 
 1. Ensure main.c is open.
 2. Select **CMake: [Debug]: Ready** from the Visual Studio Code Status Bar.
 
-	![](resources/vs-code-start-application.png)
+	![](https://raw.githubusercontent.com/gloveboxes/Track-CO2-levels-in-your-workspace-to-improve-health-wellbeing-and-productivity/master/resources/vs-code-start-application.png)
 
 3. From Visual Studio Code, press <kbd>F5</kbd> to build, deploy, start, and attached the remote debugger to the application now running the Azure Sphere device.
 
@@ -480,11 +477,11 @@ You need to **Migrate** the newly enrolled device to the **Carbon Dioxide Monito
 1. Select the newly enrolled device from the **All devices** template.
 2. Click **Migrate**
 
-    ![](resources/iot-central-migrate-device.png)
+    ![](https://raw.githubusercontent.com/gloveboxes/Track-CO2-levels-in-your-workspace-to-improve-health-wellbeing-and-productivity/master/resources/iot-central-migrate-device.png)
 
 3. Select the **Carbon Dioxide Monitor** Template, and then click migrate.
 
-    ![](resources/iot-central-migrate-select-template.png)
+    ![](https://raw.githubusercontent.com/gloveboxes/Track-CO2-levels-in-your-workspace-to-improve-health-wellbeing-and-productivity/master/resources/iot-central-migrate-select-template.png)
 
 ---
 
@@ -504,7 +501,7 @@ You need to **Migrate** the newly enrolled device to the **Carbon Dioxide Monito
 
 You can view and set device properties from the **Form** tab.
 
-![](resources/iot-central-set-desired-property-state.png)
+![](https://raw.githubusercontent.com/gloveboxes/Track-CO2-levels-in-your-workspace-to-improve-health-wellbeing-and-productivity/master/resources/iot-central-set-desired-property-state.png)
 
 ### Setting the HVAC thermostat
 
