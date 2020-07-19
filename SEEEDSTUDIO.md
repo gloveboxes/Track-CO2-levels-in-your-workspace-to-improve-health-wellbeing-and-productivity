@@ -24,7 +24,7 @@ The problem is we cannot see or smell Carbon Dioxide, it just keeps building up,
 
 ## The solution
 
-I wanted to build a secure IoT device with [Azure Sphere](https://azure.microsoft.com/en-gb/services/azure-sphere/?WT.mc_id=julyot-co2-dglover) using the [Seeed Studio Grove CO2 & Temperature & Humidity Sensor](https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD30-p-2911.html) sensor I had in my box of bits. The folks at Sensirion made it super easy to port their [SCD30 driver](https://github.com/Sensirion/embedded-scd) to Azure Sphere. It was just a matter of implementing the I2C init/read/write functions, a microsecond sleep function, plus setting up CMake build. It all just worked. The ported driver is included in this project.
+I wanted to build a secure IoT device with [Azure Sphere](https://azure.microsoft.com/en-gb/services/azure-sphere/?WT.mc_id=julyot-co2-dglover) using the [Seeed Studio Grove CO2 & Temperature & Humidity Sensor](https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD30-p-2911.html) I had in my box of bits. The folks at Sensirion made it super easy to port their [SCD30 driver](https://github.com/Sensirion/embedded-scd) to Azure Sphere. It was just a matter of implementing the I2C init/read/write functions, a microsecond sleep function, plus setting up CMake build. It all just worked. The ported driver is included in this project.
 
 ---
 
