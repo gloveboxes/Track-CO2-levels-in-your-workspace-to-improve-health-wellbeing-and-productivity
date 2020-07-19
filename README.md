@@ -40,7 +40,7 @@ I wanted to build a secure IoT device with [Azure Sphere](https://azure.microsof
 
 [Azure IoT Central](https://azure.microsoft.com/en-in/services/iot-central/?WT.mc_id=julyot-co2-dglover) provides an easy way to connect, monitor, and manage your Internet of Things (IoT) assets at scale.
 
-I created a free trial of [Azure IoT Central](https://azure.microsoft.com/en-gb/services/iot-central/?WT.mc_id=julyot-co2-dglover) and in no time I had CO2, temperature, and humidity telemetry displayed (yes, the data is real, so we have made some changes!). By the way, you can continue to connect two devices for free to IoT Central after the trial period expires.
+I created a free trial of [Azure IoT Central](https://azure.microsoft.com/en-gb/services/iot-central/?WT.mc_id=julyot-co2-dglover) and in no time I had CO2, temperature, and humidity telemetry displayed (yes, the data is real, so we have made some changes at home!). By the way, you can continue to connect two devices for free to IoT Central after the trial period expires.
 
 ![](https://raw.githubusercontent.com/gloveboxes/CO2-levels-making-you-happy-grumpy-sleepy-or-sad/master/resources/iot-central-dash.png)
 
