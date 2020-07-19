@@ -1,6 +1,6 @@
 # Improve health, wellbeing, and productivity by tracking your home workspace CO2 levels
 
-How to build a healthier working environment by monitoring CO2, temperature, and humidity levels with an [Azure Sphere](https://azure.microsoft.com/en-gb/services/azure-sphere/?WT.mc_id=julyot-co2-dglover), an [SDC30 sensor](https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD30-p-2911.html), and [Azure IoT Central](https://azure.microsoft.com/en-gb/services/iot-central/?WT.mc_id=julyot-co2-dglover).
+How to build a healthier working environment by monitoring CO2, temperature, and humidity levels with a [Seeed Studio Azure Sphere device](https://azure.microsoft.com/en-gb/services/azure-sphere/?WT.mc_id=julyot-co2-dglover), an [SDC30 sensor](https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD30-p-2911.html), and [Azure IoT Central](https://azure.microsoft.com/en-gb/services/iot-central/?WT.mc_id=julyot-co2-dglover).
 
 ![](https://raw.githubusercontent.com/gloveboxes/CO2-levels-making-you-happy-grumpy-sleepy-or-sad/master/resources/banner.png)
 
@@ -15,8 +15,6 @@ This is part of the #JulyOT [IoT Tech Community](http://aka.ms/julyot) series, a
 ## Are CO2 levels making you grumpy, sleepy, or sad
 
 Working from home it is easy to close the door to shut out the noise of everyday life while we get on with work. Closing the door can lead to a build-up of CO2 gas, a by-product of our breathing, which can impact our wellbeing, concentration, and productivity levels.
-
-Check out "[The importance of Indoor Air Quality (IAQ) for Business Performance and Wellbeing](https://iotfactory.eu/the-importance-of-indoor-air-quality-iaq-for-business-performance-and-wellbeing/)".
 
 The problem is we cannot see or smell Carbon Dioxide, it just keeps building up and we have no way of knowing it is happening other than getting tired or a headache. So, with that in mind, I figured it was the Internet of Things to the rescue!
 
@@ -60,7 +58,7 @@ Attach the Azure Sphere to the Grove Breakout board and plug in the following pe
 
 ## Get started
 
-For the complete guide to building this CO2 monitoring solution head to "[Track CO2 levels in your workspace to improve health, wellbeing, and productivity](https://github.com/gloveboxes/CO2-levels-making-you-happy-grumpy-sleepy-or-sad)"
+Follow the complete guide to "[Track CO2 levels in your workspace to improve health, wellbeing, and productivity](https://github.com/gloveboxes/CO2-levels-making-you-happy-grumpy-sleepy-or-sad)"
 
 ### Learning resources
 
