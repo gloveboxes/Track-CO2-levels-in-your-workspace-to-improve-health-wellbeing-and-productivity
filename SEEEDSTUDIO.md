@@ -18,7 +18,7 @@ Working from home it is easy to close the door to shut out the noise of everyday
 
 Check out "[Indoor carbon dioxide levels could be a health hazard, scientists warn](https://www.theguardian.com/environment/2019/jul/08/indoor-carbon-dioxide-levels-could-be-a-health-hazard-scientists-warn)".
 
-The problem is we cannot see or smell Carbon Dioxide, it just keeps building up and we have no way of knowing it is happening other than getting tired or a headache. So, with that in mind, I figured it was the Internet of Things to the rescue!
+The problem is we cannot see or smell Carbon Dioxide, it just keeps building up, and we have no way of knowing it is happening other than getting tired or a headache. So, with that in mind, I figured it was the Internet of Things to the rescue!
 
 ---
 

@@ -26,7 +26,7 @@ Working from home it is easy to close the door to shut out the noise of everyday
 
 Check out "[Indoor carbon dioxide levels could be a health hazard, scientists warn](https://www.theguardian.com/environment/2019/jul/08/indoor-carbon-dioxide-levels-could-be-a-health-hazard-scientists-warn)".
 
-The problem is we cannot see or smell Carbon Dioxide, it just keeps building up and we have no way of knowing it is happening other than getting tired or a headache. So, with that in mind, I figured it was the Internet of Things to the rescue!
+The problem is we cannot see or smell Carbon Dioxide, it just keeps building up, and we have no way of knowing it is happening other than getting tired or a headache. So, with that in mind, I figured it was the Internet of Things to the rescue!
 
 ---
 
@@ -98,7 +98,7 @@ git clone https://github.com/gloveboxes/Track-CO2-levels-in-your-workspace-to-im
 
 ---
 
-## Set up you developer tools and your Azure Sphere
+## Set up your developer tools and your Azure Sphere
 
 Follow the Azure Sphere Developer Learning Path [Lab Set Up](https://github.com/gloveboxes/Azure-Sphere-Learning-Path/tree/master/zdocs_vs_code_iot_central/Lab_0_Introduction_and_Lab_Set_Up) to set up the developer tools, claim you Azure Sphere, and configure the device WiFi, and enable developer mode.
 
