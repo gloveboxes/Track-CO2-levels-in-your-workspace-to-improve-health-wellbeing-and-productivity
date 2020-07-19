@@ -91,7 +91,7 @@ Attach the Azure Sphere to the Grove Breakout board and plug in the following pe
 
 Clone the **Azure Sphere CO2 Monitor** solution to your desktop.
 
-```
+```bash
 git clone https://github.com/gloveboxes/Track-CO2-levels-in-your-workspace-to-improve-health-wellbeing-and-productivity.git azure-sphere-co2-monitor
 ```
 
