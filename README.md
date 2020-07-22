@@ -14,7 +14,7 @@ This is part of the #JulyOT [IoT Tech Community](http://aka.ms/julyot) series, a
 
 ## Source code and learning resources
 
-Source code: [Track CO2 levels in your workspace to improve health, wellbeing, and productivity](https://github.com/gloveboxes/CO2-levels-making-you-happy-grumpy-sleepy-or-sad).
+Source code: [Track CO2 levels in your workspace to improve health, wellbeing, and productivity](https://gloveboxes.github.io/Track-CO2-levels-in-your-workspace-to-improve-health-wellbeing-and-productivity/).
 
 Learning resources: [Azure Sphere Developer Learning Path](https://github.com/gloveboxes/Azure-Sphere-Learning-Path).
 
