@@ -18,8 +18,8 @@ set(AVNET TRUE "AVNET Azure Sphere Starter Kit")
 cmake_minimum_required (VERSION 3.10)
 project (AzureSphereIoTCentral C)
 
-azsphere_configure_tools(TOOLS_REVISION "20.04")
-azsphere_configure_api(TARGET_API_SET "5+Beta2004")
+azsphere_configure_tools(TOOLS_REVISION "20.07")
+azsphere_configure_api(TARGET_API_SET "6")
 
 
 add_subdirectory("learning_path_libs" out)
