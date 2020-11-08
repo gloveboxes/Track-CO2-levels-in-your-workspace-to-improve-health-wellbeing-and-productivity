@@ -5,7 +5,7 @@
     {
       "@id": "urn:azureCarbonDioxide:AzureSphere_4dg:z_8hhxlqe:1",
       "@type": "InterfaceInstance",
-      "name": "Interface_29k",
+      "name": "CO2",
       "schema": {
         "@id": "urn:azureCarbonDioxide:AzureSphere_7mm:3",
         "@type": "Interface",
@@ -70,25 +70,6 @@
             "schema": "integer"
           },
           {
-            "@id": "urn:azureCarbonDioxide:AzureSphere_7mm:DesiredTemperature:1",
-            "@type": "Property",
-            "displayName": {
-              "en": "Set HVAC Thermostat"
-            },
-            "name": "DesiredTemperature",
-            "writable": true,
-            "schema": "float"
-          },
-          {
-            "@id": "urn:azureCarbonDioxide:AzureSphere_7mm:ActualTemperature:1",
-            "@type": "Property",
-            "displayName": {
-              "en": "Reported HVAC Temperature"
-            },
-            "name": "ActualTemperature",
-            "schema": "float"
-          },
-          {
             "@id": "urn:azureCarbonDioxide:AzureSphere_7mm:DesiredCarbonDioxideAlert:1",
             "@type": "Property",
             "displayName": {
@@ -106,15 +87,6 @@
             },
             "name": "ActualCO2Level",
             "schema": "float"
-          },
-          {
-            "@id": "urn:azureCarbonDioxide:AzureSphere_7mm:HvacState:2",
-            "@type": "Property",
-            "displayName": {
-              "en": "Reported HVAC State"
-            },
-            "name": "ActualHvacState",
-            "schema": "string"
           }
         ]
       }
