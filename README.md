@@ -1,6 +1,6 @@
 # Improve health, wellbeing, and productivity by tracking your home workspace CO2 levels
 
-How to build a healthier working environment by monitoring CO2, temperature, and humidity levels with an [Azure Sphere](https://azure.microsoft.com/en-gb/services/azure-sphere/?WT.mc_id=julyot-co2-dglover), an [SDC30 sensor](https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD30-p-2911.html), and [Azure IoT Central](https://azure.microsoft.com/en-gb/services/iot-central/?WT.mc_id=julyot-co2-dglover).
+How to build a healthier working environment by monitoring CO2, temperature, and humidity levels with an [Azure Sphere](https://azure.microsoft.com/services/azure-sphere/?WT.mc_id=iot-0000-dglover), an [SDC30 sensor](https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD30-p-2911.html), and [Azure IoT Central](https://azure.microsoft.com/services/iot-central/?WT.mc_id=iot-0000-dglover).
 
 ![](https://raw.githubusercontent.com/gloveboxes/CO2-levels-making-you-happy-grumpy-sleepy-or-sad/master/resources/banner.png)
 
@@ -32,21 +32,21 @@ The problem is we cannot see or smell Carbon Dioxide, it just keeps building up,
 
 ## The solution
 
-I wanted to build a secure IoT device with [Azure Sphere](https://azure.microsoft.com/en-gb/services/azure-sphere/?WT.mc_id=julyot-co2-dglover) using the [Seeed Studio Grove CO2 & Temperature & Humidity Sensor](https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD30-p-2911.html) I had in my box of bits. The folks at Sensirion made it super easy to port their [SCD30 driver](https://github.com/Sensirion/embedded-scd) to Azure Sphere. It was just a matter of implementing the I2C init/read/write functions, a microsecond sleep function, plus setting up CMake build. It all just worked. The ported driver is included in this project.
+I wanted to build a secure IoT device with [Azure Sphere](https://azure.microsoft.com/services/azure-sphere/?WT.mc_id=iot-0000-dglover) using the [Seeed Studio Grove CO2 & Temperature & Humidity Sensor](https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD30-p-2911.html) I had in my box of bits. The folks at Sensirion made it super easy to port their [SCD30 driver](https://github.com/Sensirion/embedded-scd) to Azure Sphere. It was just a matter of implementing the I2C init/read/write functions, a microsecond sleep function, plus setting up CMake build. It all just worked. The ported driver is included in this project.
 
 ---
 
 ## Azure IoT Central
 
-[Azure IoT Central](https://azure.microsoft.com/en-in/services/iot-central/?WT.mc_id=julyot-co2-dglover) provides an easy way to connect, monitor, and manage your Internet of Things (IoT) assets at scale.
+[Azure IoT Central](https://azure.microsoft.com/services/iot-central/?WT.mc_id=iot-0000-dglover) provides an easy way to connect, monitor, and manage your Internet of Things (IoT) assets at scale.
 
-I created a free trial of [Azure IoT Central](https://azure.microsoft.com/en-gb/services/iot-central/?WT.mc_id=julyot-co2-dglover) and in no time I had CO2, temperature, and humidity telemetry displayed (yes, the data is real, so we have made some changes at home!). By the way, you can continue to connect two devices for free to IoT Central after the trial period expires.
+I created a free trial of [Azure IoT Central](https://azure.microsoft.com/services/iot-central/?WT.mc_id=iot-0000-dglover) and in no time I had CO2, temperature, and humidity telemetry displayed (yes, the data is real, so we have made some changes at home!). By the way, you can continue to connect two devices for free to IoT Central after the trial period expires.
 
 ![](https://raw.githubusercontent.com/gloveboxes/CO2-levels-making-you-happy-grumpy-sleepy-or-sad/master/resources/iot-central-dash.png)
 
 ### Extend and integrate Azure IoT Central applications with other cloud services
 
-Azure IoT Central is also extensible using rules and workflows. For more information, review [Use workflows to integrate your Azure IoT Central application with other cloud services](https://docs.microsoft.com/en-us/azure/iot-central/core/howto-configure-rules-advanced?WT.mc_id=julyot-co2-dglover)
+Azure IoT Central is also extensible using rules and workflows. For more information, review [Use workflows to integrate your Azure IoT Central application with other cloud services](https://docs.microsoft.com/azure/iot-central/core/howto-configure-rules-advanced?WT.mc_id=iot-0000-dglover)
 
 ---
 
@@ -110,9 +110,9 @@ Follow the Azure Sphere Developer Learning Path [Lab Set Up](https://github.com/
 
 ## Azure IoT Central
 
-Your Azure Sphere device can securely connect and communicate with cloud services. Azure Sphere includes built-in library support for both Azure IoT Hub and Azure IoT Central. This lab focuses on Azure IoT Central. Take a moment to read [Your IoT journey: simplified and secure with Azure IoT Central and Azure Sphere](https://techcommunity.microsoft.com/t5/internet-of-things/your-iot-journey-simplified-and-secure-with-azure-iot-central/ba-p/1404247?WT.mc_id=julyot-co2-dglover).
+Your Azure Sphere device can securely connect and communicate with cloud services. Azure Sphere includes built-in library support for both Azure IoT Hub and Azure IoT Central. This lab focuses on Azure IoT Central. Take a moment to read [Your IoT journey: simplified and secure with Azure IoT Central and Azure Sphere](https://techcommunity.microsoft.com/t5/internet-of-things/your-iot-journey-simplified-and-secure-with-azure-iot-central/ba-p/1404247?WT.mc_id=iot-0000-dglover).
 
-[Azure IoT Central](https://azure.microsoft.com/en-in/services/iot-central/?WT.mc_id=julyot-co2-dglover) provides an easy way to connect, monitor, and manage your Internet of Things (IoT) assets at scale.
+[Azure IoT Central](https://azure.microsoft.com/services/iot-central/?WT.mc_id=iot-0000-dglover) provides an easy way to connect, monitor, and manage your Internet of Things (IoT) assets at scale.
 
 ![Azure IoT Central](https://raw.githubusercontent.com/gloveboxes/Track-CO2-levels-in-your-workspace-to-improve-health-wellbeing-and-productivity/master/resources/azure-iot-central.jpg)
 
@@ -120,7 +120,7 @@ Your Azure Sphere device can securely connect and communicate with cloud service
 
 ## Step 1: Create a new IoT Central Application
 
-1. So the lab instructions are still visible, right mouse click, and open this link "[Azure IoT Central](https://azure.microsoft.com/en-au/services/iot-central/?WT.mc_id=julyot-co2-dglover)" in a new window.
+1. So the lab instructions are still visible, right mouse click, and open this link "[Azure IoT Central](https://azure.microsoft.com/services/iot-central/?WT.mc_id=iot-0000-dglover)" in a new window.
 
 2. Click **Build a solution**.
 
@@ -150,7 +150,7 @@ Your Azure Sphere device can securely connect and communicate with cloud service
 
 A device template is a blueprint that defines the characteristics and behaviors of a type of device that connects to an Azure IoT Central application.
 
-For more information on device templates, review the [Define a new IoT device type in your Azure IoT Central application](https://docs.microsoft.com/en-us/azure/iot-central/core/howto-set-up-template?WT.mc_id=julyot-co2-dglover) article. 
+For more information on device templates, review the [Define a new IoT device type in your Azure IoT Central application](https://docs.microsoft.com/azure/iot-central/core/howto-set-up-template?WT.mc_id=iot-0000-dglover) article. 
 
 1. Click **Device templates**, then **+ New**.
     ![](https://raw.githubusercontent.com/gloveboxes/Track-CO2-levels-in-your-workspace-to-improve-health-wellbeing-and-productivity/master/resources/iot-central-template-new.png)
@@ -207,7 +207,7 @@ For more information on device templates, review the [Define a new IoT device ty
 
 2. Next, confirm and click **Publish**
 
->See [Define a new IoT device type in your Azure IoT Central application](https://docs.microsoft.com/en-us/azure/iot-central/core/howto-set-up-template?WT.mc_id=julyot-co2-dglover) for information on creating your own device templates.
+>See [Define a new IoT device type in your Azure IoT Central application](https://docs.microsoft.com/azure/iot-central/core/howto-set-up-template?WT.mc_id=iot-0000-dglover) for information on creating your own device templates.
 
 ---
 
@@ -285,7 +285,7 @@ Follow these steps:
 4. Run the **ShowIoTCentralConfig** tool.
     Now follow the prompts that the tool provides, and copy the information from the output into the app_manifest.json file in Visual Studio.
 
-    > **Note**: Your organization might require consent for the ShowIoTCentralConfig tool to access your Azure IoT Central data in the same way that the Azure API requires such consent. In some organizations, [enterprise application permissions](https://docs.microsoft.com/azure-sphere/install/admin-consent?WT.mc_id=julyot-co2-dglover) must be granted by an IT administrator.
+    > **Note**: Your organization might require consent for the ShowIoTCentralConfig tool to access your Azure IoT Central data in the same way that the Azure API requires such consent. In some organizations, [enterprise application permissions](https://docs.microsoft.com/azure-sphere/install/admin-consent?WT.mc_id=iot-0000-dglover) must be granted by an IT administrator.
 5. Review the output from the **ShowIoTCentralConfig** tool. It will look similar to the following text.
 
     </br>
@@ -322,7 +322,7 @@ We need the ID of the Azure Sphere Tenant that is now trusted by Azure IoT Centr
 
 A device template is a blueprint that defines the characteristics and behaviors of a type of device that connects to an Azure IoT Central application.
 
-For more information on device templates, review the [Define a new IoT device type in your Azure IoT Central application](https://docs.microsoft.com/en-us/azure/iot-central/core/howto-set-up-template?WT.mc_id=julyot-co2-dglover) article. 
+For more information on device templates, review the [Define a new IoT device type in your Azure IoT Central application](https://docs.microsoft.com/azure/iot-central/core/howto-set-up-template?WT.mc_id=iot-0000-dglover) article. 
 
 1. From Azure IoT Central, navigate to **Device templates**, and select the **Azure Sphere** template.
 2. Click on **Interfaces** to list the interface capabilities.
@@ -525,7 +525,7 @@ Learn more about Azure IoT Central, properties, and device twins from Azure Sphe
 
 ## Extend and integrate Azure IoT Central applications with other cloud services
 
-Azure IoT Central is also extensible using rules and workflows. For more information, review [Use workflows to integrate your Azure IoT Central application with other cloud services](https://docs.microsoft.com/en-us/azure/iot-central/core/howto-configure-rules-advanced?WT.mc_id=julyot-co2-dglover)
+Azure IoT Central is also extensible using rules and workflows. For more information, review [Use workflows to integrate your Azure IoT Central application with other cloud services](https://docs.microsoft.com/azure/iot-central/core/howto-configure-rules-advanced?WT.mc_id=iot-0000-dglover)
 
 ---
 
