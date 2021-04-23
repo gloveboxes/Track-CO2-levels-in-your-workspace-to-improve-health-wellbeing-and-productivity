@@ -1,0 +1,3 @@
+[submodule "co2_monitor_hl/AzureSphereDevX"]
+	path = co2_monitor_hl/AzureSphereDevX
+	url = https://github.com/gloveboxes/AzureSphereDevX.git

@@ -18,11 +18,11 @@ set(SEEED_STUDIO_MINI TRUE "Seeed Studio Azure Sphere MT3620 Mini Dev Board")
 cmake_minimum_required (VERSION 3.10)
 project (AzureSphereIoTCentral C)
 
-azsphere_configure_tools(TOOLS_REVISION "20.07")
-azsphere_configure_api(TARGET_API_SET "6")
+azsphere_configure_tools(TOOLS_REVISION "21.01")
+azsphere_configure_api(TARGET_API_SET "8")
 
 
-add_subdirectory("../../../LearningPathLibrary" out)
+add_subdirectory("AzureSphereDevX" out)
 add_subdirectory("./embedded-scd" scd30)
 
 set(Source
@@ -49,12 +49,9 @@ set(ALL_FILES
 # Create executable
 add_executable(${PROJECT_NAME} ${ALL_FILES})
 target_compile_definitions(${PROJECT_NAME} PUBLIC AZURE_IOT_HUB_CONFIGURED)
-target_link_libraries(${PROJECT_NAME} applibs pthread gcc_s c azsphere_libs scd30_lib)
+target_link_libraries(${PROJECT_NAME} applibs pthread gcc_s c azure_sphere_devx scd30_lib)
 
-target_include_directories(${PROJECT_NAME} PUBLIC
-                           ../../../LearningPathLibrary
-                           ../../../IntercoreContract
-                          )
+target_include_directories(${PROJECT_NAME} PUBLIC AzureSphereDevX/include )
 
 
 if(AVNET)
